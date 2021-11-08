@@ -1,0 +1,84 @@
+
+.container1{
+    min-height :75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 20px;
+    background:rgb(91, 190, 157);
+ 
+}
+.wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,mimax(250px,1fr));
+    grid-gap: 30px;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.wrapper .box {
+    width: 100%;
+    position: relative;
+    padding: 10px;
+}
+.wrapper .box input{
+    width: 100%;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    position: relative;
+    border-bottom: 1px solid grey;
+    transition: 0.7s linear;
+}
+.wrapper .box input:focus
+.wrapper .box input:valid{
+    padding: 20px 10px;
+    background: grey;
+    margin-top: 10px;
+}
+.wrapper .box label{
+   color: whitesmoke;
+   font-size: 15px;
+   font-weight: bold;
+   padding: 20px;
+   transition: 0.5s linear;
+}
+.wrapper .box input:focus ~label
+.wrapper .box input:valid~label {
+    padding: 0
+    ;
+
+}
+.wrapper .box textarea{
+    width: 100%;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    position: relative;
+    border-bottom: 1px solid grey;
+    transition: 0.7s linear;
+}
+.wrapper .box textarea:focus
+.wrapper .box textarea:valid{
+    padding: 20px 10px;
+    background: grey;
+    margin-top: 10px;
+}
+.wrapper .box textarea:focus ~label
+.wrapper .box textarea:valid~label {
+    padding: 0
+    ;
+
+}
+.container1 input[type="submit"]{
+    background: grey;
+    padding: 15px 30pxx;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
